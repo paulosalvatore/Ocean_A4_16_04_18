@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="br.com.paulosalvatore.ocean_a4_16_04_18.MainActivity">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Nome:"
+		android:textSize="20sp"
+		android:textStyle="bold" />
+
+	<EditText
+		android:id="@+id/etNome"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Digite o seu nome" />
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="E-mail:"
+		android:textSize="20sp"
+		android:textStyle="bold" />
+
+	<EditText
+		android:id="@+id/etEmail"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Digite o seu e-mail"
+		android:inputType="textEmailAddress" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:onClick="enviar"
+			android:text="Enviar os Dados Digitados" />
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:onClick="limpar"
+			android:text="Limpar" />
+
+	</LinearLayout>
+
+</LinearLayout>
